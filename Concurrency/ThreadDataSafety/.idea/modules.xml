@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ThreadExceptionHandling.iml" filepath="$PROJECT_DIR$/ThreadExceptionHandling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadDataSafety.iml" filepath="$PROJECT_DIR$/ThreadDataSafety.iml" />
     </modules>
   </component>
 </project>
