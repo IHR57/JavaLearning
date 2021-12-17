@@ -1,4 +1,6 @@
-import RaceCondition.BankAccountMain;
+import Deadlock.DeadLockDemo;
+import Deadlock.PhilosopherDemo;
+import WaitNotify.BufferDemo;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,8 +11,24 @@ public class Main {
         //runThreadLocal();   // running thread local example
 
         // race condition example
-        BankAccountMain bankAccountMain = new BankAccountMain();
-        bankAccountMain.start();
+//        BankAccountMain bankAccountMain = new BankAccountMain();
+//        bankAccountMain.start();
+
+        // race condition solve example
+//        SolveRaceCondition.BankAccountMain solveBankAccount= new SolveRaceCondition.BankAccountMain();
+//        solveBankAccount.start();
+
+        // deadlock example
+//        DeadLockDemo deadLockDemo = new DeadLockDemo();
+//        deadLockDemo.start();
+
+        // deadlock dining philosopher problem
+//        PhilosopherDemo philosopherDemo = new PhilosopherDemo();
+//        philosopherDemo.start();
+
+        // run waitNotify Example
+        BufferDemo bufferDemo = new BufferDemo();
+        bufferDemo.start();
 
     }
 
