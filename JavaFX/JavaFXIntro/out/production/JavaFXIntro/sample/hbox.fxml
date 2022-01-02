@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<HBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="BOTTOM_RIGHT" spacing="40"
+      style="-fx-border-color: blue; -fx-border-width: 5">
+
+    <padding>
+        <Insets bottom="20" right="20"/>
+    </padding>
+
+    <Button style="-fx-background-color: gray" text="Okay" prefWidth="100"/>
+    <Button text="Cancel" prefWidth="100"/>
+    <Button text="Help" prefWidth="100"/>
+</HBox>
