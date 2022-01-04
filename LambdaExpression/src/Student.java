@@ -1,17 +1,13 @@
-import java.util.Objects;
-
-public class Contact {
-    public enum Gender {
+public class Student {
+    enum Gender {
         MALE, FEMALE
     }
     private String name;
-    private String email;
     private int age;
     private Gender gender;
 
-    public Contact(String name, String email, int age, Gender gender) {
+    public Student(String name, int age, Gender gender) {
         this.name = name;
-        this.email = email;
         this.age = age;
         this.gender = gender;
     }
@@ -22,14 +18,6 @@ public class Contact {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public int getAge() {
@@ -50,9 +38,8 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
+        return "Student{" +
                 "name='" + name + '\'' +
-                ", email='" + email + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
                 '}';

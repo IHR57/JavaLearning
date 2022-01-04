@@ -20,7 +20,7 @@ public class ContactApp {
                 });
 
         // using lambda expression
-        /* we can use lambda expression instead of anonymous inner class if the interface has
+        /* we can use lambda expression instead of anonymous inner class only if the interface has
         only one method and the interface can be used by any anonymous inner class
          */
         List<Contact> contactAged18To25Female = contactService.findContacts(contactList,
