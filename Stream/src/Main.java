@@ -71,6 +71,9 @@ public class Main {
         StreamIntermediateOperation streamIntermediateOperation = new StreamIntermediateOperation();
         streamIntermediateOperation.run();
 
+        StreamTerminalOperation streamTerminalOperation = new StreamTerminalOperation();
+        streamTerminalOperation.run();
+
     }
 
 }
