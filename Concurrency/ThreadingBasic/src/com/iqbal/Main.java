@@ -9,7 +9,22 @@ import java.util.Objects;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws InterruptedException {
+        //fileEncryptThread();
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("We are now in Thread: " + Thread.currentThread().getName());
+            }
+        });
+
+        thread.start();
+        System.out.println("Thread: " + Thread.currentThread().getName());
+        thread.sleep(1000);
+        System.out.println("Thread: " + Thread.currentThread().getName());
+    }
+
+    private static void fileEncryptThread() throws IOException{
         File directory = new File("original_files");
         FileWriter fileWriter = null;
 
