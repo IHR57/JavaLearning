@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -6,6 +7,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// mvn surefire-report:report for generating report
 class BankAccountTest {
 
     BankAccount bankAccount;
@@ -66,5 +68,12 @@ class BankAccountTest {
     @DisplayName("test speed")
     void testDepositTimeout() {
         assertTimeout(Duration.ofNanos(1), () -> bankAccount.withdraw(500));
+    }
+
+    @Test
+    @Disabled("Disabled temporary")
+    void testDisabled() {
+        bankAccount.deposit(500);
+        assertEquals(500, bankAccount.getBalance());
     }
 }

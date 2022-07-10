@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: BankAccountTimeoutTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.555 s <<< FAILURE! - in BankAccountTimeoutTest
+testDepositTimeoutAssertion{BankAccount}  Time elapsed: 0.672 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testDepositTimeoutAssertion(BankAccount) timed out after 500 milliseconds
+
